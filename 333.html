@@ -1,0 +1,59 @@
+<figure>
+    <figcaption>Figure 1. HTML form for user input</figcaption>
+    <form action="submit_profile.php" method="post" enctype="multipart/form-data">
+        <table border="1">
+             <th>BCS350 Assignment 3 -- Student Name</th>
+        </table>
+           
+        <h3>Create Your Profile</h3>
+
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" name="fname" required><br><br>
+
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname" name="lname" required><br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="standing">Class Standing: </label>
+        <select id="standing" name="standing">
+            <option value="freshman">Freshman</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+            <option value="veteran">Veteran</option>
+            <option value="transfer">Transfer Student</option>
+            <option value="international">International Student</option>
+        </select><br><br>
+
+        <label>School: </label><br>
+        <input type="radio" id="arts_sciences" name="school" value="arts_sciences" required>
+        <label for="arts_sciences">School of Arts & Sciences</label><br>
+        
+        <input type="radio" id="business" name="school" value="business">
+        <label for="business">School of Business</label><br>
+        
+        <input type="radio" id="engineering_technology" name="school" value="engineering_technology">
+        <label for="engineering_technology">School of Engineering Technology</label><br>
+        
+        <input type="radio" id="health_sciences" name="school" value="health_sciences">
+        <label for="health_sciences">School of Health Sciences</label><br><br>
+
+        <label for="extra">Extra: </label><br>
+        <input type="checkbox" id="extra" name="extra" value="extra">
+        <label for="extra">veteran</label><br>
+        <input type="checkbox" id="extra" name="extra" value="extra">
+        <label for="extra">Transfer Student</label><br>
+        <input type="checkbox" id="extra" name="extra" value="extra">
+        <label for="extra">International Student</label><br>
+
+        <label for="textbox">Program and other information to share:</label><br>
+        <textarea id="textbox" name="textbox" rows="5" cols="50"></textarea><br><br>
+
+        <label for="picture">Upload your profile picture (JPG, GIF, PNG, or TIF File):</label>
+        <input type="file" id="picture" name="picture" accept="image/jpeg, image/gif, image/png, image/tif"><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</figure>
